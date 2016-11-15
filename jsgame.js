@@ -2,7 +2,6 @@
  * Created by morgan.kennedy433 on 11/1/16.
  */
 
-//make new function to slec random color
 
 var colors = ["BLUE", "CYAN", "GOLD", "GRAY", "GREEN", "MAGENTA", "ORANGE", "RED", "WHITE", "YELLOW"];
 var random = Math.floor(Math.random() * 9);
@@ -19,6 +18,10 @@ function game () {
 
 
     try {
+        if(colors.indexOf([guess]) == -1) {
+            throw "guess";
+        }
+
 
         if (guess == randcolor) {
             alert("Congratulations! You have guessed the color!" +
