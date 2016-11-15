@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Color Guessing Game</title>
+    <style>
+        fieldset {
+            margin-left: 25em;
+            margin-right: 25em;
+            margin-top: 12em;
+            background: lightgray;
+            border: dotted;
+            border-color: #af2aff;
+            text-align: center;
+        }
+
+        body {
+            background: lightgray;
+        }
+
+        #blue {
+            color: blue;
+        }
+        #cyan {
+            color: cyan;
+        }
+        #gold {
+            color: gold;
+        }
+        #gray {
+            color: gray;
+        }
+        #green {
+            color: green;
+        }
+        #magenta {
+            color: magenta;
+        }
+        #orange {
+            color: orange;
+        }
+        #red {
+            color: red;
+        }
+        #white {
+            color: white;
+        }
+        #yellow{
+            color: yellow;
+        }
+
+    </style>
+    <script src="jsgame.js"></script>
+</head>
+<body>
+
+    <fieldset>
+        <legend> <b> GuEsS tHe CoLoR!!1! </b> </legend>
+
+            I am thinking of one of these colors:
+        <br>
+        <span id="blue"> Blue </span> ,
+        <span id="cyan"> Cyan </span> ,
+        <span id="gold"> Gold </span> ,
+        <span id="gray"> Gray </span> ,
+        <span id="green"> Green </span>,
+        <span id="magenta"> Magenta </span> ,
+        <span id="orange"> Orange </span> ,
+        <span id="red"> Red  </span> ,
+        <span id="white"> White </span> , or
+        <span id="yellow"> Yellow </span>
+        <br>
+        Type your guess in the box, then press the button!
+<br>
+        <input type="text" id="guess" name="guess" >
+        <br>
+        <input type="button" value="Guess!" id="button"  name="button" onclick="game()">
+    </fieldset>
+
+
+</body>
+</html>
