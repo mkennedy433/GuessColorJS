@@ -18,9 +18,9 @@ function game () {
 
 
     try {
-        if(colors.indexOf([guess]) == -1) {
+       /* if(colors.indexOf([guess]) == -1) {
             throw "guess";
-        }
+        } */
 
 
         if (guess == randcolor) {
